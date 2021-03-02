@@ -1,0 +1,88 @@
+body {
+  background-color: black;
+}
+
+.app-wrapper {
+  margin: 0 auto;
+
+  width: 1300px;
+
+  grid-template-areas:
+    "h n"
+    "c c";
+
+  grid-template-rows: 107px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
+  background-color: black;
+}
+
+.header {
+  grid-area: h;
+  background-color: #1e1e1e;
+  color: white;
+
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav {
+  display: flex;
+  grid-area: n;
+  background-color: black;
+  color: white;
+
+  text-decoration: none;
+  line-height: 20px;
+  margin-bottom: 7px;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: white;
+  padding: 0 105px;
+}
+
+.navi-a {
+  padding-right: 104px;
+}
+
+.nav-a:hover {
+  background-color: #1e1e1e;
+  border: grey;
+  text-decoration: ;
+}
+
+.profile-component {
+  grid-area: c;
+  background-color: black;
+  color: white;
+
+  color: grey;
+}
+
+.logotype {
+  display: block;
+  margin: 5px 10px;
+  padding-bottom: 0px;
+  font-size: 35px;
+}
+
+.logo {
+  font-family: sans-serif;
+}
+
+.Hub {
+  background-color: rgb(240, 136, 9);
+  color: black;
+  font-weight: 700;
+  padding: 3px;
+  padding-top: 0px;
+  border-radius: 7px;
+  margin-left: 3px;
+}

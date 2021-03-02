@@ -1,0 +1,39 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  /* grid-template-columns: repeat(6, [col] 1fr);
+  grid-template-rows: repeat(3, [row] 1fr); */
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px;
+  border: solid black;
+  color: white;
+  grid-gap: 1px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid__item {
+  background-color: black;
+  position: relative;
+  /* min-height: 80px; */
+}
+
+.grid__item div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.grid__item1 {
+  align-self: center;
+  justify-self: center;
+}

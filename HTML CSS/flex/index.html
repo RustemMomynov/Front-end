@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>slaves</title>
+</head>
+
+
+
+<body>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        @media (min-width: 500px) {
+
+            .container-1,
+            .container-2 {
+                display: flex;
+                /* align-items: center; */
+                flex-direction: row;
+            }
+
+            .container-2 {
+                justify-content: space-between;
+            }
+        }
+
+        .container-1 div,
+        .container-2 div {
+            padding: 10px;
+            border: 1px solid silver;
+        }
+
+        .box-1 {
+            flex: 2;
+            order: 2;
+        }
+
+        .box-2 {
+            flex: 2;
+            order: 1;
+        }
+
+        .box-3 {
+            flex: 1;
+            order: 3;
+        }
+
+        .box {
+            flex-basis: 20%;
+        }
+    </style>
+
+    <div class="container-1">
+        <div class="box-1">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui dolore cupiditate animi nemo ex,
+                ea quisquam, nam, molestias fugiat iure officia itaque architecto veritatis! Cum veniam inventore
+                molestias nobis.</p>
+        </div>
+        <div class="box-2">
+            <h3>box-2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolor illum ex, accusamus magnam, iusto
+                hic totam nesciunt eligendi reiciendis quam fuga consectetur maxime et ipsam. Dicta non quidem
+                doloribus?</p>
+        </div>
+        <div class="box-3">
+            <h3>box-3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam numquam laborum nisi rerum quibusdam
+                repellendus quasi amet vero dolore officiis? Ab magni perspiciatis eius quibusdam error veritatis quidem
+                totam ipsa? lo</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="box">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui dolore cupiditate animi nemo ex,
+                ea quisquam, nam, molestias fugiat iure officia itaque architecto veritatis! Cum veniam inventore
+                molestias nobis.</p>
+        </div>
+        <div class="box">
+            <h3>box-2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolor illum ex, accusamus magnam, iusto
+                hic totam nesciunt eligendi reiciendis quam fuga consectetur maxime et ipsam. Dicta non quidem
+                doloribus?</p>
+        </div>
+        <div class="box">
+            <h3>box-3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam numquam laborum nisi rerum quibusdam
+                repellendus quasi amet vero dolore officiis? Ab magni perspiciatis eius quibusdam error veritatis quidem
+                totam ipsa? lo</p>
+        </div>
+        <div class="box">
+            <h3>box-4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam numquam laborum nisi rerum quibusdam
+                repellendus quasi amet vero dolore officiis? Ab magni perspiciatis eius quibusdam error veritatis quidem
+                totam ipsa? lo</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

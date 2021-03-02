@@ -1,0 +1,35 @@
+.text {
+  background-color: black;
+  width: max-content;
+  padding-right: 20px;
+}
+
+.green {
+  color: green;
+  font-size: 70px;
+}
+
+.red {
+  color: red;
+  font-size: 70px;
+}
+
+.white {
+  color: white;
+  font-size: 70px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: 80px;
+  color: gold;
+  font-weight: 100;
+  font-family: cursive;
+}
+
+.red__text {
+  color: maroon;
+}

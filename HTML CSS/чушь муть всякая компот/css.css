@@ -1,0 +1,42 @@
+body {
+  background-color: #000000;
+  border: 1px dotted gray;
+  color: #ffffffff; /*цвет для шрифта*/
+  font-family: last ninja; /*шрифт*/
+  font-size: 15px; /*размер шрифта*/
+  font-weight: bolder; /*жирность шрифта*/
+  text-decoration: none; /*декорации шрифта(подчеркивание, надъчеркивание, зачёркивание)*/
+}
+
+h1 {
+  border-bottom: 1px solid white;
+} /*граница внизу элемента*/
+
+h2 {
+  text-decoration: underline;
+}
+/*нижнее подчёркивание*/
+
+a {
+  text-decoration: line-through;
+} /*подчёркивает текст, в данном случае зачёркивает*/
+
+p.greentea {
+  color: green;
+}
+
+p.Blueberry {
+  color: blue;
+}
+
+p.raspberry {
+  color: violet;
+}
+
+p.red {
+  color: red;
+}
+
+.hyana {
+  color: orange;
+}

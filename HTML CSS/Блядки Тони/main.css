@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Anton";
+  src: url(Папка/Anton-Regular.ttf);
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/85/ca/ab/85caab51be730a4e1290cd99d7d6e085.gif);
+  background-repeat: no-repeat;
+  background-size: 2000px 2000px;
+  font-family: cursive;
+  color: white;
+  font-size: small; /*размер шлифтра*/
+  font-weight: normal; /*жирность шрифта*/
+  font-style: normal; /*Определяет начертание шрифта — обычное, курсивное или наклонное*/
+}
+
+.conteiner {
+  display: flex;
+}
+
+.conteiner div {
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+.b1 {
+  flex: 1;
+}
+.b2 {
+  flex: 1.5;
+}
+h1 {
+  font-size: 220%;
+  font-weight: normal;
+  text-decoration: underline;
+  /*border-bottom: thin dotted white;*/
+}
+
+.lether {
+  letter-spacing: 50px;
+}
+
+.h {
+  font-size: 130%;
+  text-decoration: underline;
+}
+
+blockquote {
+  background-color: grey;
+  font-family: serif;
+  border: 1px dotted white;
+  color: white;
+  font-size: 100%;
+  font-style: italic;
+}
+
+figures {
+  color: orange;
+}
+
+.slaves {
+  font-family: Anton;
+}
+
+.ven {
+  border: orange;
+  margin: 10px;
+}
+
+table {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid white;
+  caption-side: bottom;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: red;
+}
+
+td,
+th {
+  border: thin solid gray;
+  padding: 5px;
+  text-align: center;
+}
+caption {
+  font-style: italic;
+  padding-top: 8px;
+}
+
+.height,
+.population {
+  text-align: right;
+}
+
+.pok {
+  list-style-position: outside;
+}

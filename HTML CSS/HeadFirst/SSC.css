@@ -1,0 +1,111 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/4d/ca/d9/4dcad98ff2d9aba671b56957ab5d70a2.gif);
+  color: white;
+  font: small/1.6em Verdana, Helvetica, Arial, sans-serif;
+}
+
+.caprio {
+  display: inline-block;
+  position: relative;
+  border: px solid white;
+}
+
+.caprio:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://risovach.ru/upload/2019/02/mem/pyanyy-dikaprio_201139238_orig_.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+h1,
+h2 {
+  color: #007e7e;
+}
+h1 {
+  font-size: 150%;
+}
+h2 {
+  font-size: 130%;
+}
+
+.wen2 {
+  background-color: white;
+  border: orange;
+  margin: 50px, 50px, 50px;
+  padding: 10px, 50px, 50px, 50px;
+  padding-right: 0%;
+  color: black;
+}
+.putin {
+  border-color: white;
+  border-width: 5px;
+  border-style: outset;
+  border-radius: 15px;
+  background-color: grey;
+  color: black;
+  padding: 25px 25px 25px 100px;
+  margin: 30px;
+  margin-right: 900px;
+  line-height: 1.9em;
+  font-family: cursive;
+  background-image: url(http://i.stack.imgur.com/sCNJW.png);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  width: 250px;
+}
+
+@media screen and (max-width: 1000px) {
+  .putin {
+    margin-right: 250px;
+    color: black;
+  }
+}
+.billy {
+  background-color: blue;
+}
+#box1 {
+  background-color: chartreuse;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.slaves {
+  border: thin outset grey;
+  width: 200px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+  text-align: center;
+  background: black
+    url(https://st4.depositphotos.com/10894906/20761/i/450/depositphotos_207612236-stock-photo-firewood-beautifully-lit-fireplace.jpg)
+    top/50px repeat-x;
+
+  line-height: 1;
+}
+
+.slaves h2,
+h3 {
+  color: indigo;
+}
+.pravo {
+  font-size: 50%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.pagan {
+  font-family: cursive;
+  font-style: italic;
+}
+.pagan span {
+  font-family: sans-serif;
+  font-weight: bold;
+}
