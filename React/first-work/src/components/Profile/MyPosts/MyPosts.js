@@ -12,7 +12,7 @@ const MyPosts = () => {
               <button>Add post</button>
             </div>
             <div>
-             <Post message="Hello it &apos s me mario" avatar="https://assets.codepen.io/153642/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1&width=512" />
+             <Post message="Hello it's me mario" avatar="https://assets.codepen.io/153642/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1&width=512" />
              <Post />
             </div>
         </div>
