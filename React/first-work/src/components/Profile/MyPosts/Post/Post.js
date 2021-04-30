@@ -6,10 +6,10 @@ const Post = (props) => {
              <div className={c.item}>
                <img src={props.avatar} alt="" srcset=""/>
                <span className={c.data}></span>
-               <span>
+               
                  {props.message}
-                 </span>
-                 <div><span>{props.likesCount}</span> like</div>
+                 
+                 <div><span className={c.like}>{props.likesCount}</span> like</div>
                
               </div>
         </div>

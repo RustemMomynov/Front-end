@@ -1,0 +1,12 @@
+
+.profile_component {
+    grid-area: c;
+    background-color: black;
+    color: white;
+  
+    color: grey;
+  }
+
+  .discription__block {
+    padding:10px 0;
+  }
