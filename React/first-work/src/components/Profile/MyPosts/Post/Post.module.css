@@ -3,3 +3,7 @@
   width: 150px;
   border-radius: 60px;
 }
+
+.item div span {
+  color: rgb(240, 136, 9);
+}
