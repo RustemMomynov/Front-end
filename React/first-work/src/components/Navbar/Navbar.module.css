@@ -1,6 +1,7 @@
 
 .nav {
     display: flex;
+    justify-content: space-between;
     grid-area: n;
     background-color: black;
     color: white;
@@ -11,13 +12,14 @@
   }
   
   .nav_a {
+    /* text-align: center; */
     text-decoration: none;
     color: white;
     padding: 0 105px;
   }
   
   .navi_a {
-    padding-right: 104px;
+    padding-right: 100px;
   }
   
   .nav_a:hover {

@@ -2,11 +2,12 @@ import MyPosts from "./MyPosts/MyPosts"
 import c from "./Profile.module.css"
 import ProfileInfo from "./ProfileInfo/ProfileInfo"
 
-const Profile = () => {
+const Profile = (props) => {
+
     return (
         <div className={c.profile_component}>
         <ProfileInfo />
-        <MyPosts />    
+        <MyPosts postData={props.state.postData} />    
       </div>
     )
 }
