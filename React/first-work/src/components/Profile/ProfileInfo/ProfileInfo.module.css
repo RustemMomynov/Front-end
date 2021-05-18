@@ -1,12 +1,51 @@
-
 .profile_component {
-    grid-area: c;
-    background-color: black;
-    color: white;
-  
-    color: grey;
-  }
+  grid-area: c;
+  background-color: black;
+  color: white;
 
-  .discription__block {
-    padding:10px 0;
-  }
+  color: grey;
+}
+
+.discription__block {
+  padding: 10px 0;
+}
+
+.menu {
+  background-size: 1300px 255px;
+  position: relative;
+  width: 1300px;
+  height: 255px;
+}
+
+.avatar {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.name {
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  top: 160px;
+  left: 250px;
+}
+
+.static {
+  display: flex;
+  position: absolute;
+  color: white;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+}
+
+.static span {
+  margin: 20px;
+  margin-bottom: 0;
+  font-size: 23px;
+}
+
+.static span div {
+  color: rgb(240, 136, 9);
+}

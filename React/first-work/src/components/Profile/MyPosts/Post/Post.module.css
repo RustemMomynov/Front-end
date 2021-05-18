@@ -1,4 +1,3 @@
-
 .item img {
   width: 150px;
   border-radius: 60px;
@@ -6,4 +5,8 @@
 
 .like {
   color: rgb(240, 136, 9);
+}
+
+.message {
+  max-width: 1200px;
 }
