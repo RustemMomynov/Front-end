@@ -11,17 +11,13 @@ const App = (props) => {
       <Redirect to="/profile" />
       <Header />
       <Navbar />
-      <Route
-        path="/dialogs"
-        render={() => <Dialogs state={props.state.messagesPage} />}
-      />
+      <Route path="/dialogs" render={() => <Dialogs store={props.store} />} />
       <Route
         path="/profile"
         render={() => (
           <Profile
             profilePage={props.state.profilePage}
-            addPost={props.addPost}
-            updateNewPostText={props.updateNewPostText}
+            dispatch={props.dispatch}
           />
         )}
       />

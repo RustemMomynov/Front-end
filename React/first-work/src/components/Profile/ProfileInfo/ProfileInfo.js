@@ -54,7 +54,7 @@ const ProfileInfo = () => {
           </span>
         </div>
       </div>
-      <div className={c.discription__block}>ava + discription</div>
+      <div className={c.discription__block}></div>
     </div>
   );
 };
