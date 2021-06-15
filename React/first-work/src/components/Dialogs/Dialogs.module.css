@@ -5,20 +5,28 @@
 
 .dialogs__item {
   padding: 10px;
-  background-color: grey;
+  background-color: #1e1e1e;
+}
+
+.dialogs__item a {
+  color: white;
+  text-decoration: none;
 }
 
 .dialogs {
-  padding: 10px;
   padding-top: 1px;
 }
 
 .messages {
-  background-color: grey;
+  background-color: #1e1e1e;
   margin-left: 10px;
   height: 800px;
-  color: black;
+  color: white;
 }
 
 .message {
+}
+
+.active__name {
+  color: orange !important;
 }

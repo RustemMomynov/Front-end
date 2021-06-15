@@ -1,9 +1,11 @@
-
-
 .heading {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .posti {
-    margin:20px 0px;
+  margin: 20px 0px;
+}
+
+.postsBlock div textarea {
+  margin-top: 10px;
 }

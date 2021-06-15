@@ -1,13 +1,15 @@
 import c from "./MyPosts.module.css";
 import Post from "./Post/Post";
 import React from "react";
+import AudioClick from "./../../../AudioClick/AudioClick";
 import {
   addPostActionCreator,
   updateNewPostTextActionCreator,
-} from "./../../../Redux/state";
+} from "./../../../Redux/profile-reducer";
 
 const MyPosts = (props) => {
-  let postElement = props.postData.map((p) => (
+  debugger;
+  let postElement = props.posts.map((p) => (
     <div className={c.posti}>
       <Post message={p.message} avatar={p.avatar} likesCount={p.likesCount} />
     </div>
@@ -15,14 +17,13 @@ const MyPosts = (props) => {
 
   let newPostElement = React.createRef();
 
-  let addPost = () => {
-    props.dispatch(addPostActionCreator());
+  let onAddPost = () => {
+    props.addPost();
   };
 
   let onPostChange = () => {
     let text = newPostElement.current.value;
-    let action = updateNewPostTextActionCreator(text);
-    props.dispatch(action);
+    props.updateNewPostText(text);
   };
 
   return (
@@ -39,7 +40,7 @@ const MyPosts = (props) => {
           value={props.newPostText}
         />
         <br />
-        <button onClick={addPost}>Add post</button>
+        <button onClick={onAddPost}>Add post</button>
       </div>
       {postElement}
     </div>

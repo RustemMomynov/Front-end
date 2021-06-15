@@ -3,10 +3,10 @@ import c from "./ProfileInfo.module.css";
 const ProfileInfo = () => {
   function getRandomLink() {
     let link = [
-      "https://media1.giphy.com/media/rwMofHqKKMLHW/giphy.gif",
-      "https://thumbs.gfycat.com/AncientTatteredCod-max-1mb.gif",
-      "https://64.media.tumblr.com/9233c766e08bcf41e57e1bab7ee91d19/tumblr_phf911a3FV1wzypxlo1_500.gifv",
-      "https://i.pinimg.com/originals/89/77/3e/89773e6aa82904b23bb8b837d13f4579.gif",
+      "/assets/img/4skeleton.gif",
+      "/assets/img/skeletonAtack.gif",
+      "/assets/img/skeletonDansen.gif",
+      "/assets/img/skeletonDansen2.gif",
     ];
 
     return link[Math.floor(Math.random() * link.length)];

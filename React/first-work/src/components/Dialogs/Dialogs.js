@@ -2,13 +2,14 @@ import { NavLink } from "react-router-dom";
 import DialogItem from "./DialogItem/DialogItem";
 import c from "./Dialogs.module.css";
 import Message from "./Message/Message";
+import AudioClick from "./../../AudioClick/AudioClick";
 import {
   updateNewMessageBodyCreator,
   sendMessageCreator,
-} from "./../../Redux/state";
+} from "./../../Redux/dialogs-reducer";
 
 const Dialogs = (props) => {
-  let state = props.store.getState().messagesPage;
+  let state = props.messagesPage;
 
   let dialogsElements = state.dialogsData.map((dialog) => (
     <DialogItem name={dialog.name} id={dialog.id} />
@@ -19,16 +20,17 @@ const Dialogs = (props) => {
   let newMessageBody = state.newMessageBody;
 
   let onSendMessageClick = () => {
-    props.store.dispatch(sendMessageCreator());
+    props.sendMessage();
   };
 
   let onNewMessageChange = (event) => {
     let body = event.target.value;
-    props.store.dispatch(updateNewMessageBodyCreator(body));
+    props.updateNewMessageBody(body);
   };
 
   return (
     <div className={c.dialogs}>
+      {/* <AudioClick /> */}
       <div className={c.dialogs__item}>{dialogsElements}</div>
       <div className={c.messages}>
         <div>{messagesElements}</div>
