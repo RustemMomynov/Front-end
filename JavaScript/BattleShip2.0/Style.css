@@ -26,10 +26,10 @@ table {
 }
 
 td {
-  width: 94px;
-  height: 94px;
+  width: 99px;
+  height: 99px;
   cursor: pointer;
-  border: white solid;
+  /* border: white solid; */
   color: red;
 }
 
@@ -50,13 +50,13 @@ form input {
 .hit {
   background: url("/JavaScript/BattleShip2.0/images/ship.png") no-repeat center
     center;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .miss {
   background: url("/JavaScript/BattleShip2.0/images/miss.png") no-repeat center
     center;
-  background-color: red;
+  /* background-color: red; */
 }
 
 td.E {

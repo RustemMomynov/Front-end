@@ -1,5 +1,5 @@
 const people = [
-  { name: "Владилен", age: 25, budget: 42500 },
+  { name: "Куртец", age: 25, budget: 42500 },
   { name: "Елена", age: 17, budget: 3400 },
   { name: "Игооооорь", age: 49, budget: 50000 },
   { name: "Михаил", age: 15, budget: 1800 },
