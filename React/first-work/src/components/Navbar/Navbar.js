@@ -32,17 +32,32 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div>
-        <NavLink onClick={orgasm} className={c.nav_a} to="">
+        <NavLink
+          onClick={orgasm}
+          className={c.nav_a}
+          to="/news"
+          activeClassName={c.active}
+        >
           News
         </NavLink>
       </div>
       <div>
-        <NavLink onClick={orgasm} className={c.nav_a} to="">
+        <NavLink
+          onClick={orgasm}
+          className={c.nav_a}
+          to="/music"
+          activeClassName={c.active}
+        >
           Music
         </NavLink>
       </div>
       <div>
-        <NavLink onClick={orgasm} className={c.nav_a + " " + c.navi_a} to="">
+        <NavLink
+          onClick={orgasm}
+          className={c.nav_a + " " + c.navi_a}
+          to="/settings"
+          activeClassName={c.active}
+        >
           Settings
         </NavLink>
       </div>

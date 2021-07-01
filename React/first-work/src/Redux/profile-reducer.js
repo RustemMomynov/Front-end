@@ -11,7 +11,7 @@ let initialState = {
     },
     {
       id: 1,
-      message: "Я чо похож на абонента?",
+      message: "lorem",
       avatar: "/assets/img/skeletonAvatar.jpg",
       likesCount: 134,
     },
@@ -21,24 +21,25 @@ let initialState = {
 };
 
 const ProfileReducer = (state = initialState, action) => {
-  // initial state значение которое дано на случай если стэйт окажется underfined
-
   switch (action.type) {
-    case ADD_POST:
-      let newPost = {
-        id: 3,
-        message: state.newPostText,
-        avatar: "/assets/img/MyAvatar.jpg",
-        likesCount: 0,
+    case ADD_POST: {
+      return {
+        ...state,
+        newPostText: "",
+        postData: [
+          ...state.postData,
+          {
+            id: 3,
+            message: state.newPostText,
+            avatar: "/assets/img/MyAvatar.jpg",
+            likesCount: 0,
+          },
+        ],
       };
-
-      state.postData.push(newPost);
-      state.newPostText = "";
-      return state;
-
-    case UPDATE_NEW_POST_TEXT:
-      state.newPostText = action.newText;
-      return state;
+    }
+    case UPDATE_NEW_POST_TEXT: {
+      return { ...state, newPostText: action.newText };
+    }
     default:
       return state;
   }

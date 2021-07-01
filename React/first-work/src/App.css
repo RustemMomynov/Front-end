@@ -7,21 +7,10 @@ body {
 
   width: 1300px;
 
-  grid-template-areas:
-    "h n"
-    "c c";
-
-  grid-template-rows: 107px 1fr;
-  grid-template-columns: 2fr 10fr;
-  /* grid-gap: 10px; */
   background-color: black;
   color: grey;
 }
 
 .app-wrapper-content {
-   padding: 10px;
+  padding: 10px;
 }
-
-
-
-

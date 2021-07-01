@@ -29,10 +29,23 @@ const _User = {
     this.age = age;
   },
 
+  Objct: {
+    num: 123,
+    viva: {
+      str: "sasas",
+    },
+  },
+
   getAge() {
     return this.age;
   },
 };
+
+const Rystem = { ..._User };
+Rystem.Objct = { ..._User.Objct };
+Rystem.Objct.viva = { ..._User.Objct.viva };
+Rystem.Objct.viva.str = "nonono";
+console.log(Rystem.Objct.viva.str === _User.Objct.viva.str);
 
 class User {
   constructor(props) {

@@ -8,7 +8,7 @@ import {
 } from "./../../../Redux/profile-reducer";
 
 const MyPosts = (props) => {
-  debugger;
+  // debugger;
   let postElement = props.posts.map((p) => (
     <div className={c.posti}>
       <Post message={p.message} avatar={p.avatar} likesCount={p.likesCount} />

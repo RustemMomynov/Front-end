@@ -27,16 +27,23 @@ let initialState = {
 };
 
 const DialogsReducer = (state = initialState, action) => {
-  // initial state значение которое дано на случай если стэйт окажется underfined
   switch (action.type) {
-    case UPDATE_NEW_MESSAGE_BODY:
-      state.newMessageBody = action.body;
-      return state;
-    case SEND_MESSAGE:
+    case UPDATE_NEW_MESSAGE_BODY: {
+      return {
+        ...state,
+        newMessageBody: action.body,
+      };
+    }
+    case SEND_MESSAGE: {
       let body = state.newMessageBody;
-      state.newMessageBody = "";
-      state.messages.push({ id: 7, message: body });
-      return state;
+
+      return {
+        ...state,
+        newMessageBody: "",
+        messages: [...state.messages, { id: 7, message: body }],
+        dialogsData: [...state.dialogsData, { id: 7, name: "Рустем" }],
+      };
+    }
     default:
       return state;
   }

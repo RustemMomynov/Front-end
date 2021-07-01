@@ -1,35 +1,58 @@
 .header {
-    grid-area: h;
-    background-color: #1e1e1e;
-    color: white;
-  
-    margin-bottom: 0px;
-    padding-bottom: 0;
-  }
-  
-  .header img {
-    width: 100px;
-    height: 100px;
-  }
-  
+  grid-area: h;
+  background-color: #1e1e1e;
+  color: white;
 
-  .logotype {
-    display: block;
-    margin: 5px 10px;
-    padding-bottom: 0px;
-    font-size: 35px;
-  }
-  
-  .logo {
-    font-family: sans-serif;
-  }
-  
-  .Hub {
-    background-color: rgb(240, 136, 9);
-    color: black;
-    font-weight: 700;
-    padding: 3px;
-    padding-top: 0px;
-    border-radius: 7px;
-    margin-left: 3px;
-  }
+  margin-bottom: 0px;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+}
+
+.logotype {
+  display: block;
+  margin: 5px 10px;
+  font-size: 35px;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+.logo {
+  font-family: sans-serif;
+}
+
+.Hub {
+  background-color: rgb(240, 136, 9);
+  color: black;
+  font-weight: 700;
+  padding: 3px;
+  padding-top: 0px;
+  border-radius: 7px;
+  margin-left: 3px;
+}
+
+.audio__container {
+  display: none;
+}
+
+.audio__flex {
+  display: flex;
+  float: right;
+}
+
+.audio {
+  width: 500px;
+  height: 20px;
+  margin: 20px;
+  margin-right: 0px;
+
+  color: blue;
+}
+
+.audio__flex button {
+  height: 23px;
+  margin-top: 19px;
+  border-radius: 100px;
+}
